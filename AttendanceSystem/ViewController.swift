@@ -19,7 +19,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         super.viewDidLoad()
         setupLocationManager()
         setupUserNotificationCenter()
-        startScanning()
+        configureBeacon()
     }
     
     private func setupUserNotificationCenter() {
@@ -35,7 +35,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         locationManager.requestAlwaysAuthorization()
     }
 
-    func startScanning() {
+    func configureBeacon() {
         let constraint = CLBeaconIdentityConstraint(uuid: beaconUUID, major: 1, minor: 1)
         let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: identifier)
         self.locationManager.startMonitoring(for: beaconRegion)

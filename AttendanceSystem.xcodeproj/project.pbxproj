@@ -67,10 +67,10 @@
 				E042B98E24BB38C1001D1712 /* Main.storyboard */,
 				E042B98C24BB38C1001D1712 /* ViewController.swift */,
 				E029E01B24BC271D00006EBF /* ViewController+Location.swift */,
+				E006064224BE938B00195CE2 /* ViewController+Notification.swift */,
 				E042B99124BB38C6001D1712 /* Assets.xcassets */,
 				E042B99324BB38C6001D1712 /* LaunchScreen.storyboard */,
 				E042B99624BB38C6001D1712 /* Info.plist */,
-				E006064224BE938B00195CE2 /* ViewController+Notification.swift */,
 			);
 			path = AttendanceSystem;
 			sourceTree = "<group>";

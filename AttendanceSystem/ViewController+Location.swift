@@ -10,11 +10,11 @@ import CoreLocation
 import Foundation
 
 extension ViewController: CLLocationManagerDelegate {
-    
+
     func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
         locationManager.requestState(for: region)
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
         if state == .inside {
             postEnterNotification()
