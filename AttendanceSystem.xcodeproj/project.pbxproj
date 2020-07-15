@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E006064324BE938B00195CE2 /* ViewController+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E006064224BE938B00195CE2 /* ViewController+Notification.swift */; };
+		E029E01C24BC271D00006EBF /* ViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E029E01B24BC271D00006EBF /* ViewController+Location.swift */; };
 		E042B98924BB38C1001D1712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042B98824BB38C1001D1712 /* AppDelegate.swift */; };
 		E042B98B24BB38C1001D1712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042B98A24BB38C1001D1712 /* SceneDelegate.swift */; };
 		E042B98D24BB38C1001D1712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042B98C24BB38C1001D1712 /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E006064124BE91A700195CE2 /* AttendanceSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AttendanceSystem.entitlements; sourceTree = "<group>"; };
+		E006064224BE938B00195CE2 /* ViewController+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Notification.swift"; sourceTree = "<group>"; };
+		E029E01B24BC271D00006EBF /* ViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Location.swift"; sourceTree = "<group>"; };
 		E042B98524BB38C1001D1712 /* AttendanceSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttendanceSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E042B98824BB38C1001D1712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E042B98A24BB38C1001D1712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,13 +61,16 @@
 		E042B98724BB38C1001D1712 /* AttendanceSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E006064124BE91A700195CE2 /* AttendanceSystem.entitlements */,
 				E042B98824BB38C1001D1712 /* AppDelegate.swift */,
 				E042B98A24BB38C1001D1712 /* SceneDelegate.swift */,
-				E042B98C24BB38C1001D1712 /* ViewController.swift */,
 				E042B98E24BB38C1001D1712 /* Main.storyboard */,
+				E042B98C24BB38C1001D1712 /* ViewController.swift */,
+				E029E01B24BC271D00006EBF /* ViewController+Location.swift */,
 				E042B99124BB38C6001D1712 /* Assets.xcassets */,
 				E042B99324BB38C6001D1712 /* LaunchScreen.storyboard */,
 				E042B99624BB38C6001D1712 /* Info.plist */,
+				E006064224BE938B00195CE2 /* ViewController+Notification.swift */,
 			);
 			path = AttendanceSystem;
 			sourceTree = "<group>";
@@ -138,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E006064324BE938B00195CE2 /* ViewController+Notification.swift in Sources */,
 				E042B98D24BB38C1001D1712 /* ViewController.swift in Sources */,
 				E042B98924BB38C1001D1712 /* AppDelegate.swift in Sources */,
 				E042B98B24BB38C1001D1712 /* SceneDelegate.swift in Sources */,
+				E029E01C24BC271D00006EBF /* ViewController+Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AttendanceSystem/AttendanceSystem.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V7TGKWJVC;
+				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = AttendanceSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AttendanceSystem/AttendanceSystem.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V7TGKWJVC;
+				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = AttendanceSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
